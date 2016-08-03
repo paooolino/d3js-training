@@ -1,5 +1,17 @@
-import Converter from './Converter';
+/*
+	internal imports
+*/
+import BarChart from './BarChart';
+
+/*
+	setup
+*/
 
 const rootElement = document.getElementById('rootElement');
-var conv = new Converter(rootElement, 1.11745);
-conv.render();
+
+/*
+	render
+*/
+
+var barChart = new BarChart('#rootElement');
+barChart.render();
